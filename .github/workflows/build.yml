@@ -8,11 +8,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: imrehg/archlinux-makepkg:latest
+    container: 
+      image: imrehg/archlinux-makepkg:latest
     steps:
-      - uses: actions/checkout@v2
       - name: Initialize Container
-        run: sudo pacman -Syu --noconfirm
+        run: |
+          sudo pacman -Syu --noconfirm
+          sudo mkdir -p /github/workspace
+          sudo chown builder:wheel -R /github
+      - uses: actions/checkout@v2
       - name: Build
         run: |
           makepkg -s --noconfirm
