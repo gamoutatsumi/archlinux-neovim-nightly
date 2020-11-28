@@ -1,0 +1,6 @@
+*
+!.gitignore
+!PKGBUILD
+!.github
+!.github/workflows
+!.github/workflows/build.yml
