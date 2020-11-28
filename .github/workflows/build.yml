@@ -19,6 +19,7 @@ jobs:
           sudo chown builder:wheel -R /home/runner
           sudo pacman -Syu --noconfirm
       - uses: actions/checkout@v2
+      - name: Change Permission
         run: sudo chown builder:wheel -R /home/runner
       - name: Build
         run: |
