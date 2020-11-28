@@ -16,6 +16,7 @@ jobs:
       - name: Initialize Container
         run: |
           sudo chown builder:wheel -R /__w
+          sudo chown builder:wheel -R /home/runner
           sudo pacman -Syu --noconfirm
       - uses: actions/checkout@v2
       - name: Build
