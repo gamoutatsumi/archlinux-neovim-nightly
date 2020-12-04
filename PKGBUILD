@@ -1,6 +1,6 @@
 # Maintainer: Tatsumi Gamou <tatsumigamou@yahoo.co.jp>
-pkgname="neovim-nightly-git"
-pkgver=r16774.ba13b94f5
+pkgname="neovim-master-git"
+pkgver=0.0.0
 _upcoming_version=0.5.0
 pkgrel=1
 pkgdesc='Fork of Vim aiming to improve user experience, plugins, and GUIs (pre-release build)'
